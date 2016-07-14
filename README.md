@@ -2,6 +2,8 @@
 
 ## DigiWord is A Single Author Blogging Platform Created with PHP &amp; Bootstrap.  
 
+## Demo - [DigiWord](http://sharadshinde.in/demo) | [Admin Panel]( http://sharadshinde.in/demo/admin)
+
 ### Features
 * Admin Panel
 * Add Categories to Posts
