@@ -7,12 +7,12 @@ echo '
 <head>
 	<title>'.$title.'</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="../css/bootstrap.min.css" rel="stylesheet">
-  	<script src="../js/jquery.js"></script> 
-  	<script src="../js/bootstrap.min.js"></script> 
-  	<link href="../editor/summernote.css" rel="stylesheet">
-  	<script src="../editor/editor.js"></script>
-	<link rel="stylesheet" href="../css/styles.css">	
+	<link href="./css/bootstrap.min.css" rel="stylesheet">
+  	<script src="./js/jquery.js"></script> 
+  	<script src="./js/bootstrap.min.js"></script> 
+  	<link href="./editor/summernote.css" rel="stylesheet">
+  	<script src="./editor/editor.js"></script>
+	<link rel="stylesheet" href="./css/styles.css">	
 </head>
 <body>
 	<header>
@@ -24,7 +24,7 @@ echo '
         				<span class="icon-bar"></span>
         				<span class="icon-bar"></span> 
      				 </button>
-      				<a class="navbar-brand" id="navtitle" href="../">'.BLOG.'</a>
+      				<a class="navbar-brand" id="navtitle" href="./">'.BLOG.'</a>
     			</div>
     			<div class="collapse navbar-collapse" id="myNavbar">
 	    			<ul class="nav navbar-nav navbar-right">';

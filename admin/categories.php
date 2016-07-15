@@ -32,24 +32,12 @@
 						?>
 						<td>
                     		<a href="edit-category.php?id=<?php echo $row['catID'];?>">Edit</a> | 
-                    		<a href="categories.php?delcat=<?php echo $row['catID'];?>">Delete</a>
+                    		<a href="delcat.php?id=<?php echo $row['catID'];?>">Delete</a>
                 		</td>
 
                 		<?php
                 		echo '</tr>';
 
-                		if(isset($_GET['delcat']))
-				    	{ 
-				    		$catID = $row['catID'];
-			    			$q = "DELETE FROM blog_cats WHERE catID = '$catID'";
-			    			$result = mysqli_query($con,$q);
-			    			if(mysqli_affected_rows($con)==1)
-			    			{
-			    				header('Location: categories.php?action=deleted');
-			    				
-			    			}
-			    			
-						}
 					}
 
 					echo '</table>';

@@ -1,5 +1,5 @@
 <?php
-	$title = 'DigiWord';
+	$title = "BLOG";
 	require_once('inc/dbconfig.php');
 ?>
 
@@ -13,7 +13,7 @@
 				{
 					while($row = mysqli_fetch_assoc($result))
 					{
-						echo '<div class="col-md-9"><div class="postbox">';
+						echo '<div class="col-md-9 col-sm-12"><div class="postbox">';
 			                echo '<h1 id="posttitle"><a href="viewpost.php?id='.$row['id'].'&title='.$row['postTitle'].'">'.$row['postTitle'].'</a></h1>';
 			                echo '<p id="postdate"><i>Posted on '.date('jS M Y H:i:s', strtotime($row['post_date'])).'</i> by '.$row['auther'];
 
@@ -43,7 +43,7 @@
 					$result3 = mysqli_query($con,$catq);
 					if (mysqli_num_rows($result3) > 0)
 					{
-						echo '<div class="col-md-3"><div class="recent"><h2>Categories</h2><ul class="list-group">';
+						echo '<div class="col-md-3 col-sm-12"><div class="recent"><h2>Categories</h2><ul class="list-group">';
 							while($row3 = mysqli_fetch_assoc($result3))
 							{
 					            
@@ -64,7 +64,7 @@
 				} // Post list if closed.
 				else
 				{
-					echo '<div class="alert alert-warning text-center col-md-offset-4 col-md-4"><h3>no posts found, visit after sometime!</h3></div>';
+					echo '<div class="alert alert-warning text-center col-md-offset-4 col-md-4 col-sm-12"><h3>no posts found, visit after sometime!</h3></div>';
 					die();
 				}
 
@@ -72,7 +72,5 @@
 
 			?>
 		</div>
-<script src="../js/jquery.js"></script>
-<script src="../js/bootstrap.min.js"></script>
 </body>
 </html>

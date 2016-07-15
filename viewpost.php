@@ -15,7 +15,7 @@
 				{
 					while($row = mysqli_fetch_assoc($result))
 					{
-						echo '<div class="col-md-9"><div id="bigpost">';
+						echo '<div class="col-md-9 col-sm-12"><div id="bigpost">';
 			                echo '<h1 id="posttitle">'.$row['postTitle'].'</h1>';
 			                echo '<p id="postdate"><i>Posted on '.date('jS M Y H:i:s', strtotime($row['post_date'])).'</i> by '.$row['auther'];
 
@@ -37,7 +37,7 @@
 			                echo '<p><h3 id="content">'.$row['content'].'</h3></p>';                           
 			            echo '</div></div>';
 			            ?>
-			        <div class="col-md-3">
+			        <div class="col-md-3 col-sm-12">
 
 			    <?php
 
@@ -90,6 +90,7 @@
 				}
 
 			?>
-<script src="../js/bootstrap.min.js"></script>
+</div>
+</div>
 </body>
 </html>

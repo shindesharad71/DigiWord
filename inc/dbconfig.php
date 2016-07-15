@@ -5,7 +5,7 @@
 
 	$hostname = 'localhost'; 	// Host Name
 	
-	$user = 'root'; // username of host
+	$user = ''; // username of host
 	
 	$password = ''; // password of host
 	
