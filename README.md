@@ -1,4 +1,4 @@
-# DigiWord
+![DigiWord](http://sharadshinde.in/digiword-logo.png)
 
 ## DigiWord is A Single Author Blogging Platform Created with PHP &amp; Bootstrap.  
 
@@ -27,7 +27,7 @@ Add Your Database Details in **inc/dbconfig.php** file.
 
 ```php
 
-$hostname = 'localhost'; 	// Host Name
+	$hostname = 'localhost'; 	// Host Name
 	
 	$user = 'root'; // username of host
 	
@@ -44,7 +44,13 @@ $hostname = 'localhost'; 	// Host Name
 ```
 
 ### Version
-V 1.0 released on 15-07-2016
+
+#### v1.0
+* released on 15-07-2016
+
+#### v1.0.1 
+* minor bugs fixed
+* mobile compability added
 
 License
 ----
