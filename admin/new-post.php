@@ -62,7 +62,7 @@
 	<div class="container-fluid topspace">
 			<form class="" method="post" action="<?php $PHP_SELF ?>">
 				<h1 class="text-center"><u>New Post</u></h1>
-				<div class="col-md-4">
+				<div class="col-md-4" id="new-post-border">
 
 					<div class="">
 						<label for="postTitle"><h3>Post Title</h3></label>

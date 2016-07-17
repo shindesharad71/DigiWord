@@ -99,6 +99,10 @@ a, a:hover {
 	margin-top: 10px;
 }
 
+#new-post-border {
+	border-right: 1px dashed #000;
+}
+
 
 /*
 
