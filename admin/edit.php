@@ -13,7 +13,7 @@
 <script>
         $(document).ready(function() {
         $('#description').summernote({
-        	height: 100,
+        	height: 150,
         });
         $('#content').summernote({
         	height: 300,
@@ -84,47 +84,51 @@
 
 ?>
 
-	<div class="container topspace">
-		<div class="form-wrapper">
+<div class="container-fluid topspace">
 			<form class="" method="post" action="<?php $PHP_SELF ?>">
-				<h1 class="form-signin-heading">Edit Post</h1>
-				
-				<div class="space">
-					<label for="postTitle"><h3>Post Title</h3></label>
-					<input type="text" name="postTitle" value="<?php echo $postTitle; ?>" placeholder="Post Title"class="form-control" required autofocus>
-				</div>
-				
-				<div class="space">
-					<label for="description"><h3>Post Description</h3></label>
-					<textarea name="description" maxlength="250" placeholder="Post Description" id="description" class="form-control" required><?php echo $description; ?></textarea>
-				</div>
-				
-				<div class="space">
-					<label for="content"><h3>Post Content</h3></label>
-					<textarea name="content" placeholder="Post Content" id="content" class="form-control" required><?php echo $content; ?></textarea>
-				</div>
+				<h1 class="text-center"><u>Edit Post</u></h1>
+				<div class="col-md-4">
 
-				<div class="space">
-					<label for="content"><h2>Post Category</h2></label><br>
-					<?php
-						$query1 = "SELECT catID, catTitle FROM blog_cats";
-						$result1 = mysqli_query($con,$query1);
-						if (mysqli_num_rows($result1) > 0)
-						{
-							while($row1 = mysqli_fetch_assoc($result1))
-							{	
-								echo '<div class="radio">
-  								<label><input type="radio" name="cats" value="'.$row1['catID'].'"><b>'.$row1['catTitle'].'</b></label>
-								</div>';
+					<div class="">
+						<label for="postTitle"><h3>Post Title</h3></label>
+						<input type="text" name="postTitle" placeholder="Post Title" value="<?php echo $postTitle; ?>" class="form-control" required autofocus>
+					</div>
+
+					<div class="">
+						<label for="description"><h3>Post Description</h3></label>
+						<textarea name="description" maxlength="250" placeholder="Post Description" id="description" class="form-control space" required><?php echo $description; ?></textarea>
+					</div>
+
+					<div class="">
+						<label for="content"><h3>Post Category</h3></label><br>
+						<?php
+							$query1 = "SELECT catID, catTitle FROM blog_cats";
+							$result1 = mysqli_query($con,$query1);
+							echo mysqli_error($con);
+							if (mysqli_num_rows($result1) > 0)
+							{
+								while($row1 = mysqli_fetch_assoc($result1))
+								{	
+									echo '<div class="radio">
+	  								<label><input type="radio" name="cats" value="'.$row1['catID'].'"><b>'.$row1['catTitle'].'</b></label>
+									</div>';
+								}
 							}
-						}
-					?>
-				</div>					
-				<div class="space">
-					<button class="btn btn-lg btn-primary" name="update" type="submit" id="update">Update Post</button>
-				</div>				
+						?>
+					</div>
+				</div>
+				
+				<div class="col-md-8">
+					<div class="">
+						<label for="content"><h3>Post Content</h3></label>
+						<textarea name="content" placeholder="Post Content" id="content" class="form-control space" required><?php echo $content; ?></textarea>
+					</div>
+					<div class="text-center">
+						<button class="btn btn-lg btn-primary" name="update" type="submit" id="update">Update Post</button>
+					</div>
+				</div>		
+				
 			</form>
-		</div>
 	</div>
 </body>
 </html>
