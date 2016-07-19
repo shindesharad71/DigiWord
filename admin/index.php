@@ -9,6 +9,9 @@
 	}
 ?>
 	<div class="container topspace">
+		<div class="text-center">
+				<p><a class="btn btn-primary btn-sm" href='new-post.php'>New Post</a></p>
+		</div>
 			<?php
 
 				$query = "SELECT id, postTitle, description, post_date, auther, catinfo FROM blog_posts ORDER BY id DESC";
@@ -17,7 +20,7 @@
 
 				if (mysqli_num_rows($result) > 0)
 				{
-					echo '<table class="topspace table table-hover"><tr class="info"><th>Title</th><th>Category</th><th>Date</th><th>Auther</th><th>Action</th></tr>';
+					echo '<table class="table table-hover"><tr class="info"><th>Title</th><th>Category</th><th>Date</th><th>Auther</th><th>Action</th></tr>';
 					while($row = mysqli_fetch_assoc($result))
 					{
 						echo '<tr>';
@@ -27,11 +30,12 @@
 
 			        $forcat = "SELECT catID, catTitle, catSlug FROM blog_cats WHERE catID = ".$row['catinfo']."";
 						$result1 = mysqli_query($con,$forcat);
+
 						if (mysqli_num_rows($result1) > 0)
 						{
 							while($row1 = mysqli_fetch_assoc($result1))
 							{			
-								echo '<td><a href="viewbycat.php?catid='.$row1['catID'].'&category='.$row1['catTitle'].'">'.$row1['catTitle'].'</a></td>';
+								echo '<td><a href="../viewbycat.php?catid='.$row1['catID'].'&category='.$row1['catTitle'].'">'.$row1['catTitle'].'</a></td>';
 							}
 						}
 						else echo '<td> - </td>';
