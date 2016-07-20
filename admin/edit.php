@@ -12,9 +12,6 @@
 
 <script>
         $(document).ready(function() {
-        $('#description').summernote({
-        	height: 150,
-        });
         $('#content').summernote({
         	height: 300,
         });
@@ -96,7 +93,7 @@
 
 					<div class="">
 						<label for="description"><h3>Post Description</h3></label>
-						<textarea name="description" maxlength="250" placeholder="Post Description" id="description" class="form-control space" required><?php echo $description; ?></textarea>
+						<textarea name="description" rows="7" cols="60" maxlength="250" placeholder="Post Description" id="description" class="form-control space" required><?php echo $description; ?></textarea>
 					</div>
 
 					<div class="">

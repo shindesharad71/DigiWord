@@ -36,23 +36,20 @@
 
 		if($rows == 1)
 		{
-			echo '<div class="topspace alert alert-success"><h3>Post Published Sccessfully, Redirecting to Admin Panel</h3></div>';
+			echo '<div class="alert alert-success topspace"><h3>Post Published Sccessfully, Redirecting to Admin Panel</h3></div>';
 			echo '<script>setTimeout(function () { window.location.href = "index.php";}, 2000);</script>';
 		}
 		else
 		{
 			echo '<div class="topspace alert alert-danger"><h3>error while posting, try again!</h3></div>';		
 		}
-			
+
 	}
 
 ?>
 
 <script>
         $(document).ready(function() {
-        $('#description').summernote({
-        	height: 150,
-        });
         $('#content').summernote({
         	height: 300,
         });
@@ -71,7 +68,7 @@
 
 					<div class="">
 						<label for="description"><h3>Post Description</h3></label>
-						<textarea name="description" maxlength="250" placeholder="Post Description" id="description" class="form-control space" required></textarea>
+						<textarea name="description" rows="7" cols="60" maxlength="250" placeholder="Post Description" id="description" class="form-control space" required></textarea>
 					</div>
 
 					<div class="">
