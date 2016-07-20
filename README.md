@@ -2,24 +2,24 @@
 
 ## DigiWord is A Single Author Blogging Platform Created with PHP &amp; Bootstrap.  
 
-### Demo - [DigiWord](http://sharadshinde.in/demo) | [Admin Panel]( http://sharadshinde.in/demo/admin)
+### :pushpin: Demo - [DigiWord](http://sharadshinde.in/demo) | [Admin Panel]( http://sharadshinde.in/demo/admin)
 * username - admin
 * password - admin
 
-### Features
+### :pushpin: Features
 * Admin Panel
 * Add Categories to Posts
 * Edit Category and Posts
 * Recent Posts Section on Sidebar
 * View posts by Category
 
-### Resources Used while Making
+### :pushpin: Resources Used while Making
 * PHP
 * Bootstrap
 * JavaScript
 * Summernote Editor
 
-### Installation
+### :pushpin: Installation
 
 **DigiWord** requires PHP 5.6+
 
@@ -43,7 +43,7 @@ Add Your Database Details in **inc/dbconfig.php** file.
 
 ```
 
-### Version
+### :pushpin: Version
 
 #### v1.0
 * released on 15-07-2016
@@ -52,7 +52,7 @@ Add Your Database Details in **inc/dbconfig.php** file.
 * minor bugs fixed
 * mobile compability added
 
-License
+:pushpin: License
 ----
 
 MIT
