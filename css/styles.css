@@ -10,6 +10,10 @@ body {
 	background: #eee !important;
 }
 
+.white, .white a {
+  color: #fff;
+}
+
 mark {
     background-color: yellow;
 }
