@@ -6,8 +6,12 @@
 
 */
 
-body{
+body {
 	background: #eee !important;
+}
+
+mark {
+    background-color: yellow;
 }
 
 a, a:hover {
