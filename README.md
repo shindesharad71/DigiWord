@@ -66,4 +66,4 @@ MIT
 **Free Software, Hell Yeah!**
 
 
-( readme updated on 20-07-2016 )
+( readme updated on 22-07-2016 )
