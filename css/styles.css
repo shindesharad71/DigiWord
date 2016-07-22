@@ -190,3 +190,14 @@ nav, .navbar-right, .navbar {
 	border-radius: 10px;
 	margin: 25px auto;
 }
+
+
+@media (max-width:499px) {
+    
+    #navtitle {
+	color: #fff;
+	font-size: 30px;
+	font-family: 'Roboto Slab', serif;
+	}
+
+}
