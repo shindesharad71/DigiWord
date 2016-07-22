@@ -52,6 +52,11 @@ Add Your Database Details in **inc/dbconfig.php** file.
 * minor bugs fixed
 * mobile compability added
 
+### v1.1
+* bugs fixed, performance improvements
+* size reduced upto 70% !
+* search anything! added
+
 :pushpin: License
 ----
 
