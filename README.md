@@ -2,7 +2,7 @@
 
 ## DigiWord is A Single Author Blogging Platform Created with PHP &amp; Bootstrap.  
 
-### :pushpin: Demo - [DigiWord](http://sharadshinde.in/demo) | [Admin Panel]( http://sharadshinde.in/demo/admin)
+### :pushpin: Demo - [DigiWord](http://showcase.sharadshinde.in/DigiWord/) | [Admin Panel]( http://showcase.sharadshinde.in/DigiWord/admin)
 * username - admin
 * password - admin
 
