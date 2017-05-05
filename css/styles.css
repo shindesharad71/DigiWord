@@ -1,0 +1,203 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:700|Roboto);
+
+/*
+
+*************************  Login form custom styles   **********************************
+
+*/
+
+body {
+	background: #eee !important;
+}
+
+.white, .white a {
+  color: #fff;
+}
+
+mark {
+    background-color: yellow;
+}
+
+a, a:hover {
+	text-decoration: none;
+}
+
+
+
+.form-signin-heading {
+	  margin-bottom: 30px;
+}
+
+.form-wrapper{
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+
+.form-signin {
+  max-width: 380px;
+  padding: 15px 35px 45px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+.form-control {
+	  position: relative;
+	  font-size: 16px;
+	  height: auto;
+	  padding: 10px;
+}
+
+#login {
+	margin-top: 10px;
+}
+
+.space{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 5px 25px;
+}
+
+
+/*
+
+*************************  post structre  **********************************
+
+*/
+
+.postbox {
+	background-color: #fff;
+	padding: 10px 10px;
+	margin: 20px 5px;
+	border: 1px solid rgba(0,0,0,0.1);
+	z-index: 1000;
+}
+
+#postdate {
+	font-family: 'Roboto', sans-serif;
+	font-style: italic;
+}
+
+#posttitle {
+	font-family: 'Roboto Slab', serif;
+	font-weight: bolder;
+}
+
+#description {
+	font-family: 'Roboto', sans-serif;
+	font-weight: normal;
+}
+
+#description1 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: normal;
+	font-style: italic;
+	background-color: #eee;
+	padding: 20px 10px;
+	margin: 10px 2px;
+}
+
+#content {
+	font-family: 'Roboto', sans-serif;
+}
+
+#bigpost {
+	background-color: #fff;
+	padding: 15px;
+	margin-top: 10px;
+}
+
+#new-post-border {
+	border-right: 1px dashed #000;
+}
+
+
+/*
+
+*************************  Navigation  **********************************
+
+*/
+
+nav, .navbar-right, .navbar {
+	border-radius: 0px;
+	padding: 5px 10px;
+}
+
+.topspace {
+	margin-top: 75px;
+}
+
+#navtitle {
+	color: #fff;
+	font-size: 45px;
+	font-family: 'Roboto Slab', serif;
+
+}
+
+#logout {
+	color: #fff;
+	background-color: red;
+	border-radius: 10px;
+	font-weight: bold;
+	padding: 7px;
+	margin: 9px;
+}
+
+#session {
+	color: #fff;
+	background-color: grey;
+	border-radius: 10px;
+	font-weight: bold;
+	padding: 7px;
+	margin: 9px;
+}
+
+/*
+
+*************************  footer  **********************************
+
+*/
+
+#footer1 {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 7px;
+  margin-top: 35px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+}
+
+/*
+
+*************************  recent posts  **********************************
+
+*/
+
+.recent {
+	background-color: #fff;
+	padding: 10px;
+	border-radius: 10px;
+	margin: 25px auto;
+}
+
+.category-list {
+	background-color: #fff;
+	padding: 10px;
+	border-radius: 10px;
+	margin: 25px auto;
+}
+
+
+@media (max-width:499px) {
+    
+    #navtitle {
+	color: #fff;
+	font-size: 30px;
+	font-family: 'Roboto Slab', serif;
+	}
+
+}
