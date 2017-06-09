@@ -1,5 +1,3 @@
-![DigiWord](http://sharadshinde.in/digiword-logo.png)
-
 ## DigiWord is A Single Author Blogging Platform Created with PHP &amp; Bootstrap.  
 
 ### :pushpin: Demo - [DigiWord](http://showcase.sharadshinde.in/DigiWord/) | [Admin Panel]( http://showcase.sharadshinde.in/DigiWord/admin)
